@@ -1,0 +1,55 @@
+/* ============ Web Components ===========*/
+@import "./menuToggle.css"; 
+@import "./nav.css"; 
+
+/* ===== Components Design / Variables ====== */
+:root {
+    /*Color Base*/
+    --clr-Dark: #000000;  
+    --clr-White: #ffffff; 
+    /*Modern Palette Neon*/
+    --clr-neonDark: #17181f; 
+    --clr-neonTwo: #6C72CB; 
+    --clr-neonThr: #CB69C1; 
+    --clr-neonFour: #EEEDF0;  
+   /*Fonts / sizes*/
+    --font-size-small: 1.2rem; 
+    --font-size-medium: 1.5rem; 
+    --font-size-tall: 1.8rem; 
+    --font-size-title: 2.4rem; 
+
+    --headLine1: bold 95px/153.71px var(--fontBase); 
+    --headLine2: bold 59px/95px var(--fontBase); 
+    --headLine3: bold 48px/77px var(--fontBase); 
+    --headLine4: bold 34px/55px var(--fontBase); 
+    --headLine5: bold 24px/38px var(--fontBase); 
+    --body1:  16px/25px var(--fontBase); 
+    --body2:  14px/22px var(--fontBase); 
+    --button: bold 14px/22px var(--fontTwo); 
+    --caption:  12px/19px var(--fontTwo); 
+}
+*,::before,::after {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+img {
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+body {
+    width: 100%;
+    font-family: 'Rubik', sans-serif;
+}
