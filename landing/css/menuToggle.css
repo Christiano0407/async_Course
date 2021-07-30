@@ -1,0 +1,38 @@
+/* ======= Menu Toggle ======= */
+.menu-toggle {
+    z-index: 9999;
+    position: fixed;
+    transition: 0.5s;
+
+    right: 5%;
+    top: 4rem;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* border: solid red 2px; */
+}
+
+.menu-toggle span {
+    background: #fff;
+    width: 100%;
+    height: 3px;
+}
+
+/*=== Menu-toggle ACTIVE ===*/
+.menu-toggle.active {
+    transform: rotate(-100deg);
+}
+
+/* ===== Trabajarcon cada línea del menú ===== */
+.menu-toggle.active span:nth-child(1) {
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(45deg);
+
+    background: #ffffff;
+    top: 50%;
+    left: 50%;
+}

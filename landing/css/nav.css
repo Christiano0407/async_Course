@@ -1,0 +1,18 @@
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+    opacity: 0.5;
+}
+.large {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.small {
+    font-size: 0.8rem;
+    color: #161616a9;
+}

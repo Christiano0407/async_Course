@@ -1,7 +1,7 @@
 /* ============ Web Components ===========*/
 @import "./menuToggle.css"; 
 @import "./nav.css"; 
-
+@import "./mainBody.css"; 
 /* ===== Components Design / Variables ====== */
 :root {
     /*Color Base*/
@@ -42,14 +42,15 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
 }
-ul {
-    list-style: none;
-}
-a {
-    text-decoration: none;
-    cursor: pointer;
-}
+/* ul { */
+/*     list-style: none; */
+/* } */
+/* a { */
+/*     text-decoration: none; */
+/*     cursor: pointer; */
+/* } */
 body {
     width: 100%;
     font-family: 'Rubik', sans-serif;
+    background: var(--clr-neonDark);
 }
