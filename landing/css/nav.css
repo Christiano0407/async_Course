@@ -10,12 +10,17 @@ a:hover {
     opacity: 0.5;
 }
 .large {
-    font-size: 1.2rem;
     text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--clr-neonTwo);
 }
 .small {
     font-size: 0.8rem;
-    color: #161616a9;
+    color: var(--clr-neonThr);
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: lowercase;
 }
 
 .nav {
