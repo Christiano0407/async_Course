@@ -23,6 +23,19 @@ Course practice Javascript Vanilla Async and Await
 - [gatsbyBlog](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-blog)
 - [netlify](https://www.netlify.com/)
 
+## Breakpoints 
+- [MyDevice](https://www.mydevice.io/#compare-devices)
+> Resolutions 
+- 320px (Phone-Portrait)
+- 478px (Mobile Portrait)
+- 480px (Phone-Landscape + Portrait)
+- 600px (Small Tablet - Portrait)
+- 768px (Large Tablet - Portrait Mobile Landscape)
+- 800px (Phone + Small Tablet - Landscape)
+- 1024px (Large Tablet - Landscape)
+- 1280px (Desktop)
+- 1440px (Wide Screen Desktop)
+- 1920px (Large Breakpoints screen)
 # MIT License
 - [Choosealicense](https://choosealicense.com/)
 - [MIT-License](https://choosealicense.com/licenses/mit/)

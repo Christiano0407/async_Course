@@ -1,3 +1,13 @@
+:root {
+    /*Color Base*/
+    --clr-Dark: #000000;  
+    --clr-White: #ffffff; 
+    /*Modern Palette Neon*/
+    --clr-neonDark: #17181f; 
+    --clr-neonTwo: #6C72CB; 
+    --clr-neonThr: #CB69C1; 
+    --clr-neonFour: #EEEDF0;  
+}
 * {
     margin: 0;
     box-sizing: border-box;
@@ -5,4 +15,17 @@
 }
 html {
     font-size: 62.5%;
+}
+img {
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
 }
