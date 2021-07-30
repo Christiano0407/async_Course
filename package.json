@@ -1,0 +1,22 @@
+{
+  "name": "async_course",
+  "version": "1.0.0",
+  "description": "project Course Js",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Christiano0407/async_Course.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Christian04",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Christiano0407/async_Course/issues"
+  },
+  "homepage": "https://github.com/Christiano0407/async_Course#readme"
+}
