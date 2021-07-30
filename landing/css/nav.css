@@ -37,7 +37,7 @@ a:hover {
     top: 0;
     width: 50%;
     height: 100vh;
-    background: #ffffff;
+    background: var(--clr-neonFour);
 
     transition: 0.8s;
 }
@@ -54,4 +54,45 @@ a:hover {
     flex-direction: column;
     justify-content: space-between;
     list-style: none;
+}
+.nav-right {
+    position: absolute;
+    z-index: 9;
+    transition: 0.5s;
+
+    left: -50%;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    background: var(--clr-neonTwo);
+}
+.nav-right.active {
+    left: 50%;
+    transition: 0.5s;
+}
+
+.nav-link {
+    position: relative;
+    opacity: 0;
+    left: -10%;
+}
+.nav-link.active {
+    transition: 0.5s;
+    left: 0;
+    opacity: 1;
+}
+.contact {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    bottom: 10%;
+    left: 0;
+}
+.contact.active {
+ opacity: 1;
+ left: 10%;
+ transition: 0.5s;
+}
+p {
+    color: var(--clr-neonDark);
 }

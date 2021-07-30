@@ -25,6 +25,7 @@ Course practice Javascript Vanilla Async and Await
 
 ## Breakpoints 
 - [MyDevice](https://www.mydevice.io/#compare-devices)
+- [responsively](https://responsively.app/)
 > Resolutions 
 - 320px (Phone-Portrait)
 - 478px (Mobile Portrait)
@@ -36,6 +37,12 @@ Course practice Javascript Vanilla Async and Await
 - 1280px (Desktop)
 - 1440px (Wide Screen Desktop)
 - 1920px (Large Breakpoints screen)
+
+# Web Publishing
+- [Surge](https://surge.sh/)
+- [Netlify](https://www.netlify.com/)
+- [Vercel](https://vercel.com/)
+- [Heroku](https://www.heroku.com/)
 # MIT License
 - [Choosealicense](https://choosealicense.com/)
 - [MIT-License](https://choosealicense.com/licenses/mit/)
