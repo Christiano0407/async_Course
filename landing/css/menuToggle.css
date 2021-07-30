@@ -36,3 +36,16 @@
     top: 50%;
     left: 50%;
 }
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(-45deg);
+
+    background: #ffffff;
+    top: 50%;
+    left: 50%;
+}
