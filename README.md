@@ -51,6 +51,19 @@ Course practice Javascript Vanilla Async and Await
 - [Copyright](https://es.wikipedia.org/wiki/Derecho_de_autor)
 - [Academic Honesty Policy](https://www.freecodecamp.org/news/academic-honesty-policy/)
 
+## Exercise App Music / Practice
+> References: 
+- [dribbleOne](https://dribbble.com/shots/15364137-Playme-Podcasts-App)
+- [dribbleTwo](https://dribbble.com/shots/15832191--Explorations-Podcast-App)
+- [dribbleThree](https://dribbble.com/shots/15851554--Explorations-Podcast-App-Desktop)
+> References Video:
+- [traversy Media](https://www.youtube.com/watch?v=8MgpE2DTTKA&t=28s)
+- [Conor Bailey-Carousel](https://www.youtube.com/watch?v=4UXJb4rjeDg)
+- [Frank Laboratory](https://www.youtube.com/watch?v=VXWvfrmpapI&t=3209s)
+- [Grid-Guide](https://github.com/Christiano0407/Grid_response/blob/main/src/css/grid.css)
+- [Steph](https://teffcode-community.github.io/platzi-blog-challenges/)
+- [Glassmorphism](https://glassmorphism.com/)
+
 MIT License
 
 Copyright (c) [2021] [Christiano0407]
