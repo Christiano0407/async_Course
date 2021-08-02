@@ -70,6 +70,10 @@ Course practice Javascript Vanilla Async and Await
 - [Steph](https://teffcode-community.github.io/platzi-blog-challenges/)
 - [Glassmorphism](https://glassmorphism.com/)
 
+> Recourses Javascript
+- [BarbaJs](https://barba.js.org/docs/getstarted/basic-transition/)
+- [GSAP](https://greensock.com/gsap/)
+
 MIT License
 
 Copyright (c) [2021] [Christiano0407]

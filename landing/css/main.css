@@ -2,6 +2,8 @@
 @import "./menuToggle.css"; 
 @import "./nav.css"; 
 @import "./mainBody.css"; 
+@import "./media.css"; 
+@import "./mainCSS/sectionDiscover.css";
 /* ===== Components Design / Variables ====== */
 :root {
     /*Color Base*/
@@ -12,6 +14,13 @@
     --clr-neonTwo: #6C72CB; 
     --clr-neonThr: #CB69C1; 
     --clr-neonFour: #EEEDF0;  
+
+    --clr-one: #0468BF;
+    --clr-two: #0477BF; 
+    --clr-three: #158FBF; 
+    --clr-four: #BFBFBF;
+    --clr-comp1: #72206a; 
+    --clr-comp2: #F2E641; 
    /*Fonts / sizes*/
     --font-size-small: 1.2rem; 
     --font-size-medium: 1.5rem; 
@@ -52,5 +61,8 @@ img {
 body {
     width: 100%;
     font-family: 'Rubik', sans-serif;
-    background: var(--clr-neonDark);
+    background-color: var(--clr-neonDark);
+}
+.main {
+    width: 100%;
 }
