@@ -1,4 +1,6 @@
 /*====== Grid Principal =======*/
+@import "./principalOne.css"; 
+
 .principal {
     width: 100%;
     height: 100vh;
@@ -6,3 +8,4 @@
     grid-template-columns: repeat(2, 1fr);
     gap: .5rem;
 }
+
