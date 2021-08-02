@@ -1,0 +1,62 @@
+/* ========= Web Components Landing Page ==========*/
+@import "./principal.css"; 
+
+
+
+/* ========= WEB VARIABLES ==========*/
+:root {
+    /* ===== Color Principal ======*/
+    --clr-black: #000000; 
+    --clr-white: #ffffff; 
+
+    /* ===== Palette Colors ======*/
+    --clr-one: #0468BF;
+    --clr-two: #0477BF; 
+    --clr-three: #158FBF; 
+    --clr-four: #BFBFBF;
+    --clr-comp1: #72206a; 
+    --clr-comp2: #F2E641; 
+
+    
+    /* ===== Fonts / Sizes ======*/
+    --font-size-small: 1.2rem; 
+    --font-size-medium: 1.5rem; 
+    --font-size-tall: 1.8rem; 
+    --font-size-title: 2.4rem; 
+
+}
+*,::before,::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+img {
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+body {
+     /* ===== Gradients Colors ======*/
+    /*background-image: linear-gradient(to right top, #d16ba5, #b95896, #a14587, #893378, #72206a, #68327f, #574291, #3e50a0, #007dc8, #00a9e2, #00d3ed, #5ffbf1);*/
+     /* ===== Glassmorphism Colors ======*/
+/*  background: rgba( 255, 255, 255, 0.25 ); */
+/* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+/* backdrop-filter: blur( 4px ); */
+/* -webkit-backdrop-filter: blur( 4px ); */
+/* border-radius: 10px; */
+/* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+
+    width: 100%;
+    font-family: 'DM Sans', sans-serif;
+}

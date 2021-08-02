@@ -15,6 +15,10 @@ Course practice Javascript Vanilla Async and Await
 ## Guides and Resources
 - [Resources_GitHub](https://github.com/zero-to-mastery/resources)
 - [awwwards](https://www.awwwards.com/)
+- [Resources Web/Design](https://github.com/zero-to-mastery/resources)
+
+# CDN
+- [CDN](https://cdnjs.com/)
 
 ## JAMStack
 - [jamstack](https://jamstack.wtf/)
@@ -53,9 +57,11 @@ Course practice Javascript Vanilla Async and Await
 
 ## Exercise App Music / Practice
 > References: 
+- [Resources](https://github.com/zero-to-mastery/resources)
 - [dribbleOne](https://dribbble.com/shots/15364137-Playme-Podcasts-App)
 - [dribbleTwo](https://dribbble.com/shots/15832191--Explorations-Podcast-App)
 - [dribbleThree](https://dribbble.com/shots/15851554--Explorations-Podcast-App-Desktop)
+- [dribblevideo](https://dribbble.com/shots/16157063-Video-Stream-App-UI-Design)
 > References Video:
 - [traversy Media](https://www.youtube.com/watch?v=8MgpE2DTTKA&t=28s)
 - [Conor Bailey-Carousel](https://www.youtube.com/watch?v=4UXJb4rjeDg)
