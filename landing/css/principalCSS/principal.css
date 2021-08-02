@@ -1,5 +1,7 @@
 /*====== Grid Principal =======*/
 @import "./principalOne.css"; 
+@import "./principalTwo.css"; 
+@import "./principalBtn.css"; 
 
 .principal {
     width: 100%;

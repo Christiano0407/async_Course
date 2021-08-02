@@ -3,7 +3,12 @@
     grid-column: 1 / 2;
     width: 100%;
     height: 100vh;
-    background-color: var(--clr-comp1);
+    background-image: url("/landing/assets/image/imageOne.jpg");
+    filter: brightness(0.5);
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
 }
 
 .container-form {

@@ -1,0 +1,7 @@
+/* =============== Section Two ===============*/
+.section-Two {
+    grid-column: 2 / 3;
+    width: 100%;
+    height: 100vh;
+    
+}

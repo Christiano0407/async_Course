@@ -1,0 +1,25 @@
+/* <<<<<<<< ========== BUTTONS cOMPONENTS =========== >>>>>>>>> */
+#btn {
+    padding: 1rem;
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+    font: var(--font-size-medium);
+    font-weight: 700;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    width: 200px;
+    margin: 1rem auto;
+}
+
+#btn:hover {
+   background-color: var(--clr-black);
+   color: var(--clr-white);
+}
+
+#btn:active {
+    transform: scale(.9);
+}
