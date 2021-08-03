@@ -8,7 +8,7 @@
     .section-Discover {
         width: 80%;
         margin: 2rem auto;
-        padding-block: .5rem auto;
+        padding: .5rem;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
