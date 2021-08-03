@@ -113,12 +113,24 @@
     .sectionCard {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 125px);
         gap: .5rem;
 
         width: 100%;
         margin: 2rem auto;
         padding: 1rem;
+
+        background: rgba( 255, 255, 255, 0.10 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        
+        
+        
+        
+        
     }
     .imageCard {
         grid-column: 1 / 3;
@@ -132,7 +144,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         padding: .5rem;
-        border-radius: 1.5rem;   
+        border-radius: 1rem;   
     }
     .imageText {
         grid-column: 1 / 3;
@@ -171,7 +183,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         padding: .5rem;
-        border-radius: 1.5rem;   
+        border-radius: 1rem;   
     }
     .imageTextTwo {
         grid-column: 3 / 5;
@@ -197,6 +209,85 @@
         font-weight: 400;
     }
 
+    /*Image Three*/
+
+    .imageCardThree {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+    .imageCardThree img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: .5rem;
+        border-radius: 1rem;   
+    }
+    .imageTextThree {
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+        padding: 5px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .TitleImageThree {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 500;
+        margin: 2px auto;
+    }
+    .textImgThree {
+        color: #fff;
+        filter: opacity(0.5);
+        font: 10px;
+        margin: 2px auto;
+        font-weight: 400;
+    }
+
+    /*Image Four*/
+
+    .imageCardFour {
+        grid-column: 3 / 5;
+        grid-row: 3 / 4;
+    }
+    .imageCardFour img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: .5rem;
+        border-radius: 1rem;   
+    }
+    .imageTextFour {
+        grid-column: 3 / 5;
+        grid-row: 4 / 5;
+        padding: 5px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .TitleImageFour {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 500;
+        margin: 2px auto;
+    }
+    .textImgFour {
+        color: #fff;
+        filter: opacity(0.5);
+        font: 10px;
+        margin: 2px auto;
+        font-weight: 400;
+    }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
