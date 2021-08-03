@@ -4,6 +4,7 @@
 @import "./mainBody.css"; 
 @import "./media.css"; 
 @import "./mainCSS/sectionDiscover.css";
+@import "./mainCSS/sectionCard.css"; 
 /* ===== Components Design / Variables ====== */
 :root {
     /*Color Base*/
