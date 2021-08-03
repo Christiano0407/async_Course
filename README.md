@@ -69,6 +69,7 @@ Course practice Javascript Vanilla Async and Await
 - [Grid-Guide](https://github.com/Christiano0407/Grid_response/blob/main/src/css/grid.css)
 - [Steph](https://teffcode-community.github.io/platzi-blog-challenges/)
 - [Glassmorphism](https://glassmorphism.com/)
+- [Material Design](https://material.io/components/bottom-navigation#anatomy)
 
 > Recourses Javascript
 - [BarbaJs](https://barba.js.org/docs/getstarted/basic-transition/)
