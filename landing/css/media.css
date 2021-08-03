@@ -114,7 +114,8 @@
 
         width: 90%;
         margin: 2rem auto;
-        padding-block: 1rem auto;
+       /*  padding-block: 1rem auto; */
+       padding: 1rem;
 
         background: rgba( 255, 255, 255, 0.10 );
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -287,7 +288,7 @@
         position: absolute;
         z-index: 3;
         width: 100%;
-        background: red;
+       /*  background: red; */
         height: 70px;
         margin: 1rem auto;
         padding-block: 1rem 0;
