@@ -132,7 +132,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         padding: .5rem;
-        border-radius: .5rem;   
+        border-radius: 1.5rem;   
     }
     .imageText {
         grid-column: 1 / 3;
@@ -152,6 +152,44 @@
         margin: 2px auto;
     }
     .textImg {
+        color: #fff;
+        filter: opacity(0.5);
+        font: 10px;
+        margin: 2px auto;
+        font-weight: 400;
+    }
+    /*Image Two >>>*/
+    .imageCardTwo {
+        grid-column: 3 / 5;
+        grid-row: 1 / 2;
+    }
+    .imageCardTwo img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: .5rem;
+        border-radius: 1.5rem;   
+    }
+    .imageTextTwo {
+        grid-column: 3 / 5;
+        grid-row: 2 / 3;
+        padding: 5px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .TitleImageTwo {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 500;
+        margin: 2px auto;
+    }
+    .textImgTwo {
         color: #fff;
         filter: opacity(0.5);
         font: 10px;
