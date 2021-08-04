@@ -7,6 +7,9 @@
     .search {
         display: none;
     }
+    .screen {
+        display: none;
+    }
 
     .section-Discover {
         width: 100%;
