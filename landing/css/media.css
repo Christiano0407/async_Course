@@ -4,6 +4,9 @@
 
 /* ========= Mobile ===========*/
 @media (min-width: 321px) and (max-width: 478px) {
+    .search {
+        display: none;
+    }
 
     .section-Discover {
         width: 100%;
