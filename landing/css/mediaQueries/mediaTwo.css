@@ -1,21 +1,16 @@
-/* ========= Media Queries ===========*/
-@import "./mediaQueries/mediaOne.css"; 
-@import "./mediaQueries/mediaTwo.css"; 
+/* ============ Media Mobile a Desktop  ================== */
 
-/* ========= Mobile ===========*/
-@media (min-width: 321px) and (max-width: 478px) {
+@media (min-width: 480px) and (max-width: 767px) {
 
     .section-Discover {
         width: 100%;
         margin: 2rem auto;
         padding: 1rem;
-
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: .5rem;
     }
-
     .discoverOne {
         grid-column: 1 / 3;
         grid-row: 1 / 2;
@@ -26,14 +21,12 @@
         padding: 1rem;
         font-weight: 700;
     }
-
     .discoverTwo {
         width: 100%;
         grid-column: 1 / 6;
         grid-row: 2 / 3;
         margin: .5rem auto;
     }
-
     .list {
       display: flex;
       justify-content: space-around;
@@ -105,19 +98,16 @@
         color: white;
         font-size: 15px;
     }
-
     /* ====== Section Card ====== */
     .sectionCard {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, 125px);
         gap: .5rem;
-
         width: 90%;
         margin: 2rem auto;
        /*  padding-block: 1rem auto; */
        padding: 1rem;
-
         background: rgba( 255, 255, 255, 0.10 );
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
         backdrop-filter: blur( 4px );
@@ -148,7 +138,6 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-
     }
     .TitleImage {
         color: #fff;
@@ -201,9 +190,7 @@
         margin: 2px auto;
         font-weight: 400;
     }
-
     /*Image Three*/
-
     .imageCardThree {
         grid-column: 1 / 3;
         grid-row: 3 / 4;
@@ -241,9 +228,7 @@
         margin: 2px auto;
         font-weight: 400;
     }
-
     /*Image Four*/
-
     .imageCardFour {
         grid-column: 3 / 5;
         grid-row: 3 / 4;
@@ -281,7 +266,6 @@
         margin: 2px auto;
         font-weight: 400;
     }
-
     .footer {
         width: 100%;
     }
@@ -296,20 +280,17 @@
         border: none;
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
-
         background: rgba( 255, 255, 255, 0.10 );
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
         backdrop-filter: blur( 4px );
         -webkit-backdrop-filter: blur( 4px );
         border-radius: 10px;
-
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: .5rem;
         padding: .5rem;
         margin: 1rem auto;
-
         grid-template-areas: "icon icon icon icon icon"
                              "text text text text text";
     }
@@ -370,7 +351,6 @@
         grid-column: 1 / 2;
         grid-row: 2 / 3;
         width: 100%;
-
         display: flex;
         align-items: center;
         justify-content: center;
@@ -431,29 +411,11 @@
         font-weight: 500;
         padding: .5rem;
     }
-}
-
-@media (min-width: 480px) and (max-width: 767px) {
 
 }
 
 /* ============ Desktop ============*/
 @media screen and (min-width: 768px) {
 
-}
-
-@media screen and (min-width: 1024px) {
-
-}
-@media screen and (min-width: 1280px) {
-
-}
-@media screen and (min-width: 1336px) {
-
-}
-@media screen and (min-width: 1440px) {
-
-}
-@media screen and (min-width: 1920px) {
-
+    
 }

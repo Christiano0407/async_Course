@@ -62,6 +62,7 @@ Course practice Javascript Vanilla Async and Await
 - [dribbleTwo](https://dribbble.com/shots/15832191--Explorations-Podcast-App)
 - [dribbleThree](https://dribbble.com/shots/15851554--Explorations-Podcast-App-Desktop)
 - [dribblevideo](https://dribbble.com/shots/16157063-Video-Stream-App-UI-Design)
+- [DribbleIpad](https://dribbble.com/shots/14965526--Exploration-Skateboard-Video-Platform-Trending)
 > References Video:
 - [traversy Media](https://www.youtube.com/watch?v=8MgpE2DTTKA&t=28s)
 - [Conor Bailey-Carousel](https://www.youtube.com/watch?v=4UXJb4rjeDg)
