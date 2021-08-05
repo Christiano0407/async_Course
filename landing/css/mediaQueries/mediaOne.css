@@ -267,6 +267,12 @@
     margin: 2px auto;
     font-weight: 400;
 }
+.imageCardFive {
+    display: none;
+}
+.imageCardSix {
+    display: none;
+}
 .footer {
     width: 100%;
 }
