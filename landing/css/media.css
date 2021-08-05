@@ -337,6 +337,11 @@
         grid-template-areas: "icon icon icon icon icon"
                              "text text text text text";
     }
+
+    .podcast {
+        display: none;
+    }
+
     .footer-list {
         grid-area: icon;
         width: 100%;

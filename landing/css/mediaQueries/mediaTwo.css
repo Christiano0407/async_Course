@@ -438,6 +438,36 @@
         font-weight: 400;
     }
 
+    /* <<<< Podcast >>>> */
+    .podcast {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem;
+        margin: 1.5rem auto;
+    }
+    .podcast-Title {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .podcast-Title h1 {
+        padding: 1rem;
+        color: #ffffff;
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-left: 1rem;
+    }
+
+    .podcast-voice {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50px 3fr 2fr 50px 50px 50px;
+        grid-template-rows: repeat(8, 1fr);
+        gap: .5rem;
+        margin: 0 auto;
+    }
+
     .footer {
         width: 100%;
     }
