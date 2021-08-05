@@ -309,6 +309,9 @@
     .footer {
         width: 100%;
     }
+    .footer-tablet {
+        display: none;
+    }
     .footer-icon {
         position: absolute;
         z-index: 3;

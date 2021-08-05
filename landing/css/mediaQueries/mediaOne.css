@@ -439,6 +439,9 @@
 .footer {
     width: 80%;
 }
+.footer-tablet {
+    display: none;
+}
 .footer-icon {
     position: absolute;
     z-index: 3;
