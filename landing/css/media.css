@@ -32,6 +32,12 @@
         padding: 1rem;
         font-weight: 700;
     }
+    .titleDiscoverOne {
+        display: none;
+    }
+    .titleDiscoverTwo {
+        display: none;
+    }
 
     .discoverTwo {
         width: 100%;

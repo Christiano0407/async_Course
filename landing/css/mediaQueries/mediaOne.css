@@ -31,6 +31,12 @@
         padding: .5rem;
         font-weight: 600;
     }
+    .titleDiscoverOne {
+        display: none;
+    }
+    .titleDiscoverTwo {
+        display: none;
+    }
     .discoverTwo {
         width: 100%;
         grid-column: 1 / 5;
