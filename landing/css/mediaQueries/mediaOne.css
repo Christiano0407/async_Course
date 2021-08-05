@@ -442,6 +442,9 @@
 .footer-tablet {
     display: none;
 }
+.reproductor {
+    display: none;
+}
 .footer-icon {
     position: absolute;
     z-index: 3;
