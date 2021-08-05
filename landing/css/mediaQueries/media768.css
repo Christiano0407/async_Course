@@ -38,10 +38,10 @@
     }
     .screen {
         width: 90%;
-        margin: 1rem auto;
+        margin: 2rem auto;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 50px 225px;
+        grid-template-rows: 50px 350px;
         padding: .5rem;
         gap: .5rem;
     }
@@ -82,7 +82,7 @@
         height: 100%;
         padding: 1rem;
         border: none;
-        border-radius: 20px;
+        border-radius: 25px;
         filter: brightness(0.5);
     }
     .screen-Text {
@@ -189,249 +189,9 @@
     }
     /* ====== Section Card ====== */
     .sectionCard {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 150px 80px 150px 80px;
-        gap: .5rem;
-        width: 90%;
-        margin: 1rem auto;
-       /*  padding-block: 1rem auto; */
-        padding: 1rem;
-        
-        /* background: rgba( 255, 255, 255, 0.05 ); */
-        /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
-        /* backdrop-filter: blur( 1.0px ); */
-        /* -webkit-backdrop-filter: blur( 1.0px ); */
-        /* border-radius: 10px; */
-        /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+        display: none;
     }
-    .imageCard {
-        grid-column: 1 / 3;
-        grid-row: 1 / 2;
-    }
-    .imageCard img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: .5rem;
-        border-radius: 1rem;   
-    }
-    .imageText {
-        grid-column: 1 / 3;
-        grid-row: 2 / 3;
-        padding: 5px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .TitleImage {
-        color: #fff;
-        font-size: 12px;
-        font-weight: 500;
-        margin: 2px auto;
-    }
-    .textImg {
-        color: #fff;
-        filter: opacity(0.5);
-        font: 10px;
-        margin: 2px auto;
-        font-weight: 400;
-    }
-    /*Image Two >>>*/
-    .imageCardTwo {
-        grid-column: 3 / 5;
-        grid-row: 1 / 2;
-    }
-    .imageCardTwo img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: .5rem;
-        border-radius: 1rem;   
-    }
-    .imageTextTwo {
-        grid-column: 3 / 5;
-        grid-row: 2 / 3;
-        padding: 5px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .TitleImageTwo {
-        color: #fff;
-        font-size: 12px;
-        font-weight: 500;
-        margin: 2px auto;
-    }
-    .textImgTwo {
-        color: #fff;
-        filter: opacity(0.5);
-        font: 10px;
-        margin: 2px auto;
-        font-weight: 400;
-    }
-    /*Image Three*/
-    .imageCardThree {
-        grid-column: 1 / 3;
-        grid-row: 3 / 4;
-    }
-    .imageCardThree img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: .5rem;
-        border-radius: 1rem;   
-    }
-    .imageTextThree {
-        grid-column: 1 / 3;
-        grid-row: 4 / 5;
-        padding: 5px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .TitleImageThree {
-        color: #fff;
-        font-size: 12px;
-        font-weight: 500;
-        margin: 2px auto;
-    }
-    .textImgThree {
-        color: #fff;
-        filter: opacity(0.5);
-        font: 10px;
-        margin: 2px auto;
-        font-weight: 400;
-    }
-    /*Image Four*/
-    .imageCardFour {
-        grid-column: 3 / 5;
-        grid-row: 3 / 4;
-    }
-    .imageCardFour img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: .5rem;
-        border-radius: 1rem;   
-    }
-    .imageTextFour {
-        grid-column: 3 / 5;
-        grid-row: 4 / 5;
-        padding: 5px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .TitleImageFour {
-        color: #fff;
-        font-size: 12px;
-        font-weight: 500;
-        margin: 2px auto;
-    }
-    .textImgFour {
-        color: #fff;
-        filter: opacity(0.5);
-        font: 10px;
-        margin: 2px auto;
-        font-weight: 400;
-    }
-    /* Five */
-    .imageCardFive {
-        grid-column:  5/ 7;
-        grid-row: 1 / 2;
-    }
-    .imageCardFive img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: .5rem;
-        border-radius: 1rem;   
-    }
-    .imageTextFive {
-        grid-column: 5 / 7;
-        grid-row: 2 / 3;
-        padding: 5px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .TitleImageFive {
-        color: #fff;
-        font-size: 12px;
-        font-weight: 500;
-        margin: 2px auto;
-    }
-    .textImgFive {
-        color: #fff;
-        filter: opacity(0.5);
-        font: 10px;
-        margin: 2px auto;
-        font-weight: 400;
-    }
-    /* Six */
-    .imageCardSix {
-        grid-column: 5 / 7;
-        grid-row: 3 / 4;
-    }
-    .imageCardSix img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: .5rem;
-        border-radius: 1rem;   
-    }
-    .imageTextSix {
-        grid-column: 5 / 7;
-        grid-row: 4 / 5;
-        padding: 5px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .TitleImageSix {
-        color: #fff;
-        font-size: 12px;
-        font-weight: 500;
-        margin: 2px auto;
-    }
-    .textImgSix{
-        color: #fff;
-        filter: opacity(0.5);
-        font: 10px;
-        margin: 2px auto;
-        font-weight: 400;
-    }
+
     /* <<<< Podcast >>>> */
     .podcast {
         width: 90%;
