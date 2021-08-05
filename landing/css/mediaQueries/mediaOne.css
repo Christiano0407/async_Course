@@ -276,9 +276,16 @@
 .imageCardFive {
     display: none;
 }
+.imageTextFive {
+    display: none;
+}
 .imageCardSix {
     display: none;
 }
+.imageTextSix {
+    display: none;
+}
+
 .footer {
     width: 100%;
 }
