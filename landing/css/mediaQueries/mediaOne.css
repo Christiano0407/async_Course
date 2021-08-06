@@ -107,6 +107,9 @@
     }
 
      /* ====== Section Card ====== */
+     .slider-wrap {
+         display: none;
+     }
  .sectionCard {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

@@ -120,6 +120,9 @@
     }
 
     /* ====== Section Card ====== */
+    .slider-wrap {
+        display: none;
+    }
     .sectionCard {
         display: grid;
         grid-template-columns: repeat(4, 1fr);

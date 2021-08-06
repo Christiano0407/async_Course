@@ -46,6 +46,12 @@ menuTog.addEventListener(`click`, () => {
     }
 }); 
 
+// Carousel ============== > 
+let sliderWrap = document.querySelector(`.slider-wrap`); 
+let slider = document.querySelector(`.slider`); 
+let clonesWidth; 
+let sliderWidth; 
+let clones = []; 
 
 
 console.groupEnd(); 

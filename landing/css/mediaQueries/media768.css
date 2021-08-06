@@ -192,6 +192,50 @@
         display: none;
     }
 
+    /* ========= Slider Wrap ========== */
+    .wrapOne {
+        width: 100%;
+        margin: 2rem auto;
+    }
+    .slider-wrap {
+      /* position: fixed; */
+      overflow: hidden;
+      top: 20%;
+      left: 10%;
+      width: 80%;
+      height: 300px;
+      margin: 0 auto;
+      border: 1px solid red;
+    }
+
+    .slider {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        will-change: transform;
+        background-color: #000;
+    }
+    .slider-item {
+        position: absolute;
+        flex: 1;
+        overflow: hidden;
+        filter: grayscale(100%);
+    }
+    .img-div {
+        position: absolute;
+        left: 1%;
+        top: 2.5%;
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
     /* <<<< Podcast >>>> */
     .podcast {
         width: 90%;

@@ -193,6 +193,9 @@
         font-size: 15px;
     }
     /* ====== Section Card ====== */
+    .slider-wrap {
+        display: none;
+    }
     .sectionCard {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
