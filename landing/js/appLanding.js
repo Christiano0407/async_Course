@@ -57,9 +57,62 @@ let scrollPos;
 
 let items = [...document.querySelectorAll(`.slider-item`)]; 
 let images = [...document.querySelectorAll(`.img-div`)]; 
-
+// >>>>>>>>> Llamar a las imágenes >>>>>>>>>>
 images.forEach((image, idx) => {
     image.style.backgroundImage = `url(/landing/assets/image/${idx+1}.jpg)`; 
-} )
+} ); 
+// <<< Clonar y agregar la imagen / Array >>>>
+items.forEach(item => {
+    let clone = item.cloneNode(true); 
+    clone.classList.add(`clone`); 
+    slider.appendChild(clone); 
+    clones.push(clone); 
+}); 
+// === Sumar el el ancho del slider a imagen >>>
+getClonesWith = () => {
+    let width = 0; 
+
+    clones.forEach(clone => {
+        width += clone.offsetWidth; 
+    })
+    return width; 
+}
 
 console.groupEnd(); 
+// ========== Scroll Y >>>>>>>>>>
+/* function getScrollPost() { */
+/*     return window.scrollY;  */
+/* } */
+/*  */
+/* function scrollUpdate() { */
+/*     scroll = getScrollPost();  */
+/*  */
+/*     if(clonesWidth + scrollPos >= sliderWidth) { */
+/*         window.scrollTo({top: 1});  */
+/*     }else if(scrollPos <= 0) { */
+/*          window.scrollTo({top: sliderWidth - clonesWidth - 1}) */
+/*     }else { */
+/*           console.log("Sorry");  */
+/*     } */
+/*  */
+/*     slider.style.transform = `translateX(${-window.scrollY}px)`;  */
+/*  */
+/*     requestAnimationFrame(scrollUpdate);  */
+/* } */
+/*  */
+/* onLoad = () => { */
+/*     calculateDimension();  */
+/*  */
+/*     document.body.style.height = `${sliderWidth}px`;  */
+/*  */
+/*     window.scrollTo({top: 1});  */
+/*     scrollUpdate();  */
+/* } */
+/*  */
+/* calculateDimension = () => { */
+/*     sliderWidth = slider.getBoundingClientRect().width;  */
+/*  */
+/*     clonesWidth = getClonesWith();  */
+/* } */
+/*  */
+/* onLoad();  */
