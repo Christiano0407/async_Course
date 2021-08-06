@@ -52,6 +52,14 @@ let slider = document.querySelector(`.slider`);
 let clonesWidth; 
 let sliderWidth; 
 let clones = []; 
+let disableScroll = false; 
+let scrollPos; 
 
+let items = [...document.querySelectorAll(`.slider-item`)]; 
+let images = [...document.querySelectorAll(`.img-div`)]; 
+
+images.forEach((image, idx) => {
+    image.style.backgroundImage = `url(/landing/assets/image/${idx+1}.jpg)`; 
+} )
 
 console.groupEnd(); 

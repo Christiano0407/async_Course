@@ -196,9 +196,11 @@
     .wrapOne {
         width: 100%;
         margin: 2rem auto;
+        position: relative;
     }
     .slider-wrap {
-      /* position: fixed; */
+     /*  position: fixed; */
+     position: relative;
       overflow: hidden;
       top: 20%;
       left: 10%;
@@ -209,23 +211,23 @@
     }
 
     .slider {
-        position: relative;
+        position: absolute;
         top: 0;
         left: 0;
         height: 100%;
-        width: 100%;
+        width: 4000px;
         display: flex;
         will-change: transform;
         background-color: #000;
     }
     .slider-item {
-        position: absolute;
+        position: relative;
         flex: 1;
         overflow: hidden;
         filter: grayscale(100%);
     }
     .img-div {
-        position: absolute;
+        position: relative;
         left: 1%;
         top: 2.5%;
         width: 90%;
@@ -234,6 +236,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+       /* background-image: url(/landing/assets/image/1.jpg); */
     }
 
     /* <<<< Podcast >>>> */
