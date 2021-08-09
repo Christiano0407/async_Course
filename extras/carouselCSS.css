@@ -2,7 +2,7 @@
     --clr-black: #000000; 
     --clr-bl02: #161616; 
     --clr-white: #ffffff; 
-    
+
 }
 *,::before,::after {
  box-sizing: border-box;
@@ -29,4 +29,16 @@ img {
   background-repeat: no-repeat;
 
   object-fit: cover;
+}
+
+main {
+    width: 100%;
+}
+section {
+    width: 100%;
+}
+.carousel {
+    width: 100%;
+    margin: 0 auto;
+    
 }
