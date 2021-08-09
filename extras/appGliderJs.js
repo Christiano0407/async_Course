@@ -11,4 +11,4 @@ new Glider(document.querySelector(`.glider`), {
     }
   });
 
-console.groupEnd(); 
+  // ========= Carousel Two >>>><>
