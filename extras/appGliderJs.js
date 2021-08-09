@@ -2,9 +2,9 @@ console.group("Glider Js");
 
 new Glider(document.querySelector(`.glider`), {
     slidesToShow: 4,
-    slidesToScroll: 5,
+    slidesToScroll: 4,
     draggable: true,
-    dots: '.dots',
+    dots: '#dots',
     arrows: {
       prev: '.glider-prev',
       next: '.glider-next'
