@@ -1,0 +1,32 @@
+:root {
+    --clr-black: #000000; 
+    --clr-bl02: #161616; 
+    --clr-white: #ffffff; 
+    
+}
+*,::before,::after {
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+}
+html {
+ font-size: 62.5%;
+}
+body {
+  width: 100%;
+  font-family: sans-serif;
+}
+ul {
+ list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  object-fit: cover;
+}
