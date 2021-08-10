@@ -76,6 +76,26 @@ Course practice Javascript Vanilla Async and Await
 - [BarbaJs](https://barba.js.org/docs/getstarted/basic-transition/)
 - [GSAP](https://greensock.com/gsap/)
 
+> Recourses Audio Javascript 
+- [AUDIO / Video](https://www.w3schools.com/tags/ref_av_dom.asp)
+- [AudioContext](https://developer.mozilla.org/en-US/docs/Web/API/AudioContext)
+- [AudioNode](https://developer.mozilla.org/en-US/docs/Web/API/AudioNode)
+- [CreateMediaSource](https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/createMediaElementSource)
+- [CreateAnalyser](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createAnalyser)
+- [BaseAudioContext](https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext)
+- [WebAudioAPI](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)
+- [OfflineAudioContext](https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext)
+- [AudioBuffer](https://developer.mozilla.org/en-US/docs/Web/API/AudioBuffer)
+- [Google play](https://developers.google.com/web/updates/2017/06/play-request-was-interrupted)
+- [play](https://developer.mozilla.org/es/docs/Web/API/HTMLMediaElement/play)
+- [pause](https://developer.mozilla.org/es/docs/Web/API/HTMLMediaElement/paused)
+- [pauseOne](https://developer.mozilla.org/es/docs/Web/API/HTMLMediaElement/pause)
+- [pauseTwo](https://www.w3schools.com/tags/av_met_pause.asp)
+- [HTTP Methods](https://www.w3schools.com/tags/ref_httpmethods.asp)
+- [Canvas](https://www.w3schools.com/tags/ref_canvas.asp)
+- [Audio HTML](https://www.w3schools.com/tags/tag_audio.asp)
+- [Video HTML](https://www.w3schools.com/tags/tag_video.asp)
+
 MIT License
 
 Copyright (c) [2021] [Christiano0407]
