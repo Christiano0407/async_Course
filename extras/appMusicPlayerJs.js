@@ -1,6 +1,7 @@
 console.group("MusicPlayer"); 
 // >> Variables <<< Const ================ 
 const title = document.getElementById(`title`); 
+console.log(title); 
 const cover = document.getElementById(`cover`); 
 console.log(cover); 
 const audio = document.getElementById(`audio`); 
@@ -20,12 +21,12 @@ const songs = document.getElementById(`songs`);
 // Song Data ==== > 
 const songList = [
     {
-      title: "Audio One",
+      title: "Dream of my Life",
       file: "audioOne.mp3", 
       cover: "1.jpg"
     }, 
     {
-      title: "Alegria",
+      title: "One future space on my life",
       file: "audioblocks-heros-path_HV33f5QSu_WM-SBA-346470570-preview.mp3",
       cover: "2.jpg",
     },
@@ -60,19 +61,54 @@ loadSongs = () => {
 }; 
 loadSongs(); 
 
-// ==== Cargar Canciones seleccionadas ========== >
+// === Canción actual === Nullo = No hay ======================= > 
+let actualSong = null; 
+
+// ==== Cargar Canciones seleccionadas ========================  >
 loadSong = (songIndex) => {
   //console.log(songIndex); 
-  // === Audio === Llamar >>>
-  audio.src = "./audio/" + songList[songIndex].file 
-  audio.play(); 
-  // === Imágenes se activan con la música === >
-  cover.src = "./img/" + songList[songIndex].cover 
-  // === Agregar el título de la canción === >
-  title.innerText = songList[songIndex].title; 
+  // ==== Condicional ===== > No se vuelva a activar la canción => Si no lo he pedido ===
+  if(songIndex !== actualSong) {
+    // = Change Active Class = >
+    changeActiveClass(actualSong, songIndex); 
+     // = No existe antes de activar una canción ==> 
+     actualSong = songIndex;
+     console.log(actualSong);
+     // === Audio === Llamar >>>
+     audio.src = "./audio/" + songList[songIndex].file;
+     audio.play(); 
+     // >> Invocar las funciones al cargar << 
+     changeCover(songIndex); 
+     changeSong(songIndex); 
+  }
 
 }
+
+// < ===== Change active Class / Cambiar clase activa ============== >
+changeActiveClass = (lastIndex, newIndex) => {
+
+  const links = document.querySelectorAll(`a`); 
+  console.log(links);
+
+  if(lastIndex !== null) {
+    links[lastIndex].classList.remove("active"); 
+  }
+
+  links[newIndex].classList.add("active");
+}
+
+// === Change Song // Cambiar la imagen de la canción =========== > 
+changeCover = (songIndex) => {
+   // === Imágenes se activan con la música === >
+   cover.src = "./img/" + songList[songIndex].cover; 
+}
+
+// == Change title of the song / Cambiar el título de la canción ============ > 
+changeSong = (songIndex) => {
+  // === Agregar el título de la canción === >
+  title.innerText = songList[songIndex].title; 
+}
+
+// == GO !!! ==
 loadSong(); 
-
-
 console.groupEnd(); 
