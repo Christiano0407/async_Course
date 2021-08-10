@@ -63,11 +63,31 @@
    }
    .slider-inner {
        position: absolute;
-       top: 15%;
-       height: 70%;
+       top: 5%;
+       height: 90%;
        width: 100%;
 
        display: flex;
-       justify-content: space-between;
+       justify-content: space-around;
        align-items: center;
+   }
+   .item {
+       position: relative;
+       width: 250px;
+       height: 100%;
+       overflow: hidden;
+       background-color: aqua;
+   }
+   .img {
+       position: absolute;
+       left: -100px;
+       width: 450px;
+       height: 100%;
+       object-fit: cover;
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;
+       filter: grayscale(100%);
+
+       border: 2px solid red;
    }
