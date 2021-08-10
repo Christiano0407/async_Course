@@ -6,9 +6,6 @@ const cover = document.getElementById(`cover`);
 console.log(cover); 
 const audio = document.getElementById(`audio`); 
 console.log(audio); 
-const progressContainer = document.getElementById(`progress-container`); 
-const progress = document.getElementById(`progress`); 
-console.log(progress); 
 
 const controls = document.querySelector(`.controls`); 
 const prev = document.getElementById(`prev`); 
@@ -17,6 +14,9 @@ const play = document.getElementById(`play`);
 const pause = document.getElementById(`pause`); 
 
 const songs = document.getElementById(`songs`); 
+const progress = document.getElementById(`progress`); 
+console.log(progress); 
+const progressContainer = document.getElementById(`progress-container`); 
 
 // Song Data ==== > 
 const songList = [
@@ -39,6 +39,10 @@ const songList = [
 console.log(songList); 
 
 // ========== <<< Functions >>> ============ 
+progressContainer.addEventListener("click", setProgress); 
+
+audio.addEventListener("timeupdate", updateProgress); 
+
 // ==== Charger Songs / Cargar canciones y mostrar el listado ===== >
 loadSongs = () => {
    songList.forEach((song, index) => {
@@ -59,7 +63,7 @@ loadSongs = () => {
         songs.appendChild(li); 
    })
 }; 
-loadSongs(); 
+
 
 // === Canción actual === Nullo = No hay ======================= > 
 let actualSong = null; 
@@ -78,63 +82,78 @@ loadSong = (songIndex) => {
      audio.src = "./audio/" + songList[songIndex].file;
      
      // >> Invocar las funciones al cargar << 
+     playSong(); 
      changeCover(songIndex); 
      changeSong(songIndex); 
   }
 }
 
 // === Progress Container ======================================================= >
-
+ function updateProgress(event) {
+   const {duration, currentTime} = event.srcElement; 
+   const percent = (currentTime / duration) * 100; 
+   progress.style.width = percent + "%"; 
+ }; 
 
 // === Progress ============================================================== >
+function setProgress(event) {
+  const totalWidth = this.offsetWidth; 
+  const progressWidth = event.offsetX; 
+  const current = (progressWidth / totalWidth) * audio.duration; 
+  audio.currentTime = current; 
+}; 
 
+// === Controls Update / carga =============== >
+ updateControls = () => {
+  if(audio.paused) {
+    play.classList.remove(`fa-pause`); 
+    play.classList.add(`fa-play`); 
+  }else {
+    play.classList.add(`fa-pause`); 
+    play.classList.remove(`fa-play`); 
+  }
+ }
 // === Play =============== >
 play.addEventListener("click", () => {
   console.log("Play"); 
 
   allPLay = () => {
-    if(actualSong !== null) {
-      audio.play(); 
+    if(audio.paused) {
+      playSong();  
+   } else {
+     pauseSong(); 
    }
   }
   allPLay(); 
 }); 
-// === Paused ================ > 
-pause.addEventListener("click", () => {
-   console.log("Paused"); 
 
-  allPause = () => {
-    if(audio.paused) {
-      audio.play(); 
-   }else {
-     audio.pause(); 
+next.addEventListener(`click`, () => nextSong()); 
+prev.addEventListener(`click`, () => prevSong()); 
+
+playSong = () => {
+   if(actualSong !== null) {
+     audio.play(); 
+     updateControls(); 
    }
-  }
-  allPause(); 
-}); 
-// ========== PREVIOUS Btn =========== > 
-prev.addEventListener("click", () => {
-  prevSong = () => {
-    if(actualSong > 0) {
-      loadSong(actualSong - 1)
-    }else {
-      loadSong(songList.length - 1)
-    }
- }
- prevSong()
-}); 
+}
+// === Paused ================ > 
+/* pause.addEventListener("click", () => { */
+/*    console.log("Paused");  */
+/*  */
+/*   allPause = () => { */
+/*     if(audio.paused) { */
+/*       audio.play();  */
+/*    }else { */
+/*      audio.pause();  */
+/*    } */
+/*   } */
+/*   allPause();  */
+/* });  */
+pauseSong = () => {
+  audio.pause(); 
+  updateControls(); 
+}
 
-// ========= AFTER Btn ============== > 
-next.addEventListener("click", () => {
-  nextSong = () => {
-    if(actualSong < songList.length - 1) {
-       loadSong(actualSong + 1); 
-    }else {
-       loadSong(0); 
-    }
-  }
-  nextSong(); 
-}); 
 // < ===== Change active Class / Cambiar clase activa ============== >
 changeActiveClass = (lastIndex, newIndex) => {
 
@@ -159,6 +178,50 @@ changeSong = (songIndex) => {
   title.innerText = songList[songIndex].title; 
 }
 
+// ========== PREVIOUS Btn =========== > 
+/* prev.addEventListener("click", () => { */
+/*   console.log(previous);  */
+/*   prevSong = () => { */
+/*     if(actualSong > 0) { */
+/*       loadSong(actualSong - 1) */
+/*     }else { */
+/*       loadSong(songList.length - 1) */
+/*     } */
+/*  } */
+/*  prevSong() */
+/* });  */
+prevSong = () => {
+  if(actualSong > 0) {
+    loadSong(actualSong - 1)
+  }else {
+    loadSong(songList.length - 1)
+  }
+}
+prevSong()
+
+// ========= AFTER Btn ============== > 
+/* next.addEventListener("click", () => { */
+/*   console.log("Next");  */
+/*   nextSong = () => { */
+/*     if(actualSong < songList.length - 1) { */
+/*        loadSong(actualSong + 1);  */
+/*     }else { */
+/*        loadSong(0);  */
+/*     } */
+/*   } */
+/*   nextSong();  */
+/* });  */
+nextSong = () => {
+  if(actualSong < songList.length - 1) {
+     loadSong(actualSong + 1); 
+  }else {
+     loadSong(0); 
+  }
+}
+nextSong(); 
+
+audio.addEventListener(`ended`, () => nextSong()); 
 // == GO !!! ==
-loadSong(); 
+//loadSong(); 
+loadSongs(); 
 console.groupEnd(); 
