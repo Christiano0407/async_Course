@@ -76,13 +76,32 @@ loadSong = (songIndex) => {
      console.log(actualSong);
      // === Audio === Llamar >>>
      audio.src = "./audio/" + songList[songIndex].file;
-     audio.play(); 
+     
      // >> Invocar las funciones al cargar << 
      changeCover(songIndex); 
      changeSong(songIndex); 
   }
 
 }
+
+// === Play =============== >
+play.addEventListener("click", () => {
+  console.log("Play"); 
+
+   if(actualSong !== null) {
+      audio.play(); 
+   }
+}); 
+// === Paused ================ > 
+pause.addEventListener("click", () => {
+   console.log("Paused"); 
+
+   if(audio.paused) {
+      audio.play(); 
+   }else {
+     audio.pause(); 
+   }
+})
 
 // < ===== Change active Class / Cambiar clase activa ============== >
 changeActiveClass = (lastIndex, newIndex) => {
