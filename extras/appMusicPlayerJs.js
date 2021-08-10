@@ -88,19 +88,25 @@ loadSong = (songIndex) => {
 play.addEventListener("click", () => {
   console.log("Play"); 
 
-   if(actualSong !== null) {
+  allPLay = () => {
+    if(actualSong !== null) {
       audio.play(); 
    }
+  }
+  allPLay(); 
 }); 
 // === Paused ================ > 
 pause.addEventListener("click", () => {
    console.log("Paused"); 
 
-   if(audio.paused) {
+  allPause = () => {
+    if(audio.paused) {
       audio.play(); 
    }else {
      audio.pause(); 
    }
+  }
+  allPause(); 
 }); 
 // ========== PREVIOUS Btn =========== > 
 prev.addEventListener("click", () => {
@@ -134,7 +140,6 @@ changeActiveClass = (lastIndex, newIndex) => {
   if(lastIndex !== null) {
     links[lastIndex].classList.remove("active"); 
   }
-
   links[newIndex].classList.add("active");
 }
 
