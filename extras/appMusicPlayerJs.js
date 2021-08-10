@@ -81,8 +81,12 @@ loadSong = (songIndex) => {
      changeCover(songIndex); 
      changeSong(songIndex); 
   }
-
 }
+
+// === Progress Container ======================================================= >
+
+
+// === Progress ============================================================== >
 
 // === Play =============== >
 play.addEventListener("click", () => {
