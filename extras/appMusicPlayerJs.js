@@ -101,8 +101,30 @@ pause.addEventListener("click", () => {
    }else {
      audio.pause(); 
    }
-})
+}); 
+// ========== PREVIOUS Btn =========== > 
+prev.addEventListener("click", () => {
+  prevSong = () => {
+    if(actualSong > 0) {
+      loadSong(actualSong - 1)
+    }else {
+      loadSong(songList.length - 1)
+    }
+ }
+ prevSong()
+}); 
 
+// ========= AFTER Btn ============== > 
+next.addEventListener("click", () => {
+  nextSong = () => {
+    if(actualSong < songList.length - 1) {
+       loadSong(actualSong + 1); 
+    }else {
+       loadSong(0); 
+    }
+  }
+  nextSong(); 
+}); 
 // < ===== Change active Class / Cambiar clase activa ============== >
 changeActiveClass = (lastIndex, newIndex) => {
 
