@@ -63,7 +63,7 @@
        top: 0;
        /* left: 0; */
        display: grid;
-       grid-template-columns: repeat(8, 1fr);
+       grid-template-columns: repeat(7, 1fr);
        gap: .5rem;
        pointer-events: none;
 
@@ -83,6 +83,10 @@
        background-position: center;
        border-radius: 10px;
        cursor: pointer;
+       opacity: 1;
+   }
+   .img:hover {
+       opacity: .5;
    }
   /*  .img:hover { */
   /*      transform: scale(1.5); */

@@ -46,6 +46,23 @@ slider.addEventListener(`mousemove`, (e) => {
      x = e.offsetX; 
 
      innerSlider.style.left = `${x - startX}px`; 
+
+     checkbounddary(); 
 }); 
+
+// ===== Scroll con parámetros un stop a las imágenes =========================== > 
+
+checkbounddary = () => {
+  let outer = slider.getBoundingClientRect(); 
+  let inner = innerSlider.getBoundingClientRect(); 
+ 
+  if(parseInt(innerSlider.style.left) > 0) {
+      innerSlider.style.left = `0px`; 
+  }else if(inner.right < outer.right) {
+    innerSlider.style.left = ` -${inner.width - outer.width}px`; 
+  }
+}; 
+
+//checkbounddary(); 
 
 console.groupEnd(); 
