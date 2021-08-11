@@ -43,3 +43,14 @@
    .container {
  
    }
+
+   .player__album img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     
+    object-fit: cover;
+
+    width: 200px;
+    height: 200px;
+   }

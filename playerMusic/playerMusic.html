@@ -15,14 +15,16 @@
 <body>
     
     <main>
+        <!--Mobile Reproductor-->
         <section class="oneMusic">
             <div class="container">
                 <div class="player">
+                    <!--Controlees / botones de la parte superior-->
                     <div class="player_controls">
                         <div class="player_btn player_btn--small">
                           <i class="fas fa-arrow-left"></i>
                         </div>
-                        <h5 class="player_title">Playing Now</h5>
+                        <h5 class="player_title">Playing Now Your Music</h5>
                         <div class="player_btn player_btn--small">
                           <i class="fas fa-bars"></i>
                         </div>
@@ -47,18 +49,18 @@
                     <audio controls id="audio" class="player_audio">
                         <source src="../extras/audio/audioOne.mp3" type="audio/mpeg">
                     </audio>
-                    <!--Botones del reproductor-->
+                    <!--Botones del reproductor / Play and pause / -->
                     <div class="player_controls">
-                        <div class="player_btn player_btn--small">
+                        <div class="player_btn player_btn--medium">
                           <i class="fas fa-backward"></i>
                         </div>
 
-                        <div class="player_btn player_btn--small">
+                        <div class="player_btn player_btn--medium blue" id="play">
                             <i class="fas fa-play play-btn"></i>
-                            <i class="fas fa-pause pause-btn"></i>
+                            <i class="fas fa-pause pause-btn hide"></i>
                         </div>
                                                   
-                        <div class="player_btn player_btn--small">
+                        <div class="player_btn player_btn--medium">
                           <i class="fas fa-forward"></i>
                         </div>
                     </div>
