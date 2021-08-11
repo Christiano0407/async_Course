@@ -11,10 +11,11 @@ let X;
 
 
 // ===================== Eventos and functions ============================ >
+// =========== Obtener Imágenes =========== >>
 images.forEach((img, idx) => {
    img.style.backgroundImage = `url(/carouselOne/images/${idx+1}.jpg)`; 
 }); 
-
+// =============== Slider y manita =============== >
 slider.addEventListener(`mousedown`, (e) => {
    pressed = true; 
    startX = e.offsetX - innerSlider.offsetLeft; 
@@ -24,9 +25,27 @@ slider.addEventListener(`mousedown`, (e) => {
 
 slider.addEventListener(`mouseenter`, () => {
     slider.style.cursor = "grab"; 
-})
+}); 
 
+/* slider.addEventListener(`mouseleave`, () => { */
+/*     slider.style.cursor = "default";  */
+/* }); */
 
+slider.addEventListener(`mouseup`, () => {
+    slider.style.cursor = "grab";  
+}); 
+slider.addEventListener(`mouseup`, () => {
+    pressed = false; 
+}); 
 
+// === Ejecutar el scroll === >
+slider.addEventListener(`mousemove`, (e) => {
+     if(!pressed)return; 
+     e.preventDefault(); 
+
+     x = e.offsetX; 
+
+     innerSlider.style.left = `${x - startX}px`; 
+}); 
 
 console.groupEnd(); 
