@@ -34,8 +34,12 @@
    header {
        width: 100%;
        margin: 2rem auto;
+       height: 30px;
+       background: #181818;
    }
    .container {
        width: 100%;
        margin: 2rem auto;
+       height: 300px;
+       background: lightskyblue;
    }
