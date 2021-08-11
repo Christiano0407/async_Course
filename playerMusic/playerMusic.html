@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32*32" href="../playerMusic/icon/angry-regular.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../playerMusic/stylePlayerMusic.css">
+    <title>App Player Music | Javascript Vanilla | Chris04.com</title>
+</head>
+<body>
+    
+    <main>
+        <section class="oneMusic">
+            <div class="container">
+                <div class="player">
+                    <div class="player_controls">
+                        <div class="player_btn player_btn--small">
+                          <i class="fas fa-arrow-left"></i>
+                        </div>
+                        <h5 class="player_title">Playing Now</h5>
+                        <div class="player_btn player_btn--small">
+                          <i class="fas fa-bars"></i>
+                        </div>
+                    </div>
+                    <!--Imagen / Music-->
+                    <div class="player__album">
+                        <figure>
+                            <img src="../playerMusic/img/2.jpg" alt="player-img" title="Player-Music">
+                        </figure>
+                    </div>
+
+                    <h2 class="player_artist">One Men In</h2>
+                    <h3 class="player_song">Latch</h3>
+                    <!--Simular Reproductor de música / recorrido-->
+                    <input type="range" value="20" min="0" class="player_level">
+                    <!--Simular el tiempo transcurre-->
+                    <div class="audio-duration">
+                    <div class="start">00:01</div>
+                    <div class="end">04:36</div>
+                    </div>
+                    <!--Audio music / Canciones a reproducir-->
+                    <audio controls id="audio" class="player_audio">
+                        <source src="../extras/audio/audioOne.mp3" type="audio/mpeg">
+                    </audio>
+                    <!--Botones del reproductor-->
+                    <div class="player_controls">
+                        <div class="player_btn player_btn--small">
+                          <i class="fas fa-backward"></i>
+                        </div>
+
+                        <div class="player_btn player_btn--small">
+                            <i class="fas fa-play play-btn"></i>
+                            <i class="fas fa-pause pause-btn"></i>
+                        </div>
+                                                  
+                        <div class="player_btn player_btn--small">
+                          <i class="fas fa-forward"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="../playerMusic/appPlayerMusicJS.js" type="text/javascript"></script>
+</body>
+</html>
