@@ -27,13 +27,40 @@ const songList = [
     }, 
     {
         path: "audioOne.mp3",
-        songName: "Light of the Night",
+        songName: "Remember your Madness",
     },
     {
         path: "audioblocks-in-my-heart_rkd92NBhH_WM-SBA-300416957-preview.mp3",
         songName: "Light of the Night",
     },   
-]
+]; 
 console.log(songList); 
+/*  */
+/* let song_Playing = false;  */
+/*  */
+/* playSong = () => { */
+/*     song_Playing = true;  */
+/*     audio.play();  */
+/* };  */
+/*  */
+/* pauseSong = () => { */
+/*     song_Playing = false;  */
+/*     audio.pause(); */
+/* };  */
+/*  */
+/* play.addEventListener(`click`, () => ( */
+/*     song_Playing ? pauseSong() : playSong() */
+/* ));  */
+/* // === Load Song >  */
+/* loadSong = (songList) => { */
+/*     title.textContent = songList.songName;  */
+/*     audio.src = songList.path;  */
+/* };  */
+/* // == Current Song;  */
+/* let i = 0;  */
+/*  */
+/* // On load = select first song from song list */
+/* loadSong(songList[i]);  */
+/*  */
 
 console.groupEnd(); 
