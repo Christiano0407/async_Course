@@ -31,7 +31,7 @@
                 <!--IMÁGENES DEL REPRODUCTOR-->
                 <div class="player__imgArea">
                     <figure>
-                        <img src="#" alt="img-area">
+                        <img id="player__img" class="player__img" src="../customMusic/img/brand3.jpg" alt="img-area">
                     </figure>
                 </div>
                 <div class="song__details">
@@ -42,30 +42,28 @@
                 <!--REPRODUCTOR DE MÚSICA-->
                  <div class="progress__area">
                      <!--AUDIO / REPRODUCTOR DE MÚSICA-->
-                     <div class="progress__bar">
-                         <span></span>
-                     </div>
+                     <div class="progress__bar"></div>
                      <div class="audio__timer">
                          <span class="currentStart">00:20</span>
                          <span class="currentEnd">3:40</span>
                      </div>
                  </div>
                 <!--BOTÓNES DEL REPRODUCTOR DE MÚSICA-->
-                 <div class="player__controls">
-                     <div class="player__btn player_btn--medium">
+                 <div class="player__controls two">
+                     <div class="player__btn player__btn--medium">
                         <i id="repeat-plist" class="fas fa-redo-alt"></i>
                      </div>
 
-                      <div class="player__btn player_btn--medium">
+                      <div class="player__btn player__btn--medium">
                           <i id="prev" class="fas fa-backward"></i>
                       </div>
 
-                      <div class="player_btn player_btn--medium blues" id="play">
+                      <div class="player__btn player__btn--medium blues" id="play">
                         <i id="play" class="fas fa-play play-btn"></i>
                         <i id="pause" class="fas fa-pause pause-btn hide"></i>
                      </div>
 
-                     <div class="player_btn player_btn--medium">
+                     <div class="player__btn player__btn--medium">
                         <i id="next" class="fas fa-forward"></i>
                      </div>
 
@@ -73,6 +71,16 @@
                         <i id="more-music" class="fas fa-plus"></i>
                      </div>
 
+                 </div>
+
+                 <!--Music List-->
+                 <div class="music-list">
+                     <div class="header">
+                         <div class="row">
+                            <i class="fas fa-play"></i>
+                            <!-- <i class="fas fa-reply-all"></i> -->
+                         </div>
+                     </div>
                  </div>
                 
             </div>
