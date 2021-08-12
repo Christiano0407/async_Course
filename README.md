@@ -95,6 +95,9 @@ Course practice Javascript Vanilla Async and Await
 - [Canvas](https://www.w3schools.com/tags/ref_canvas.asp)
 - [Audio HTML](https://www.w3schools.com/tags/tag_audio.asp)
 - [Video HTML](https://www.w3schools.com/tags/tag_video.asp)
+> Color 
+- [Glassmorphism](https://glassmorphism.com/)
+- [Neumorphism](https://neumorphism.io/#e0e0e0)
 
 MIT License
 

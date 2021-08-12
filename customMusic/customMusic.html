@@ -4,11 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32*32" href="../playerMusic/icon/angry-regular.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../customMusic/styleCustomCSS.css">
-    <title>Document</title>
+    <title>Custom Play Music Three | Javascript Vanilla </title>
 </head>
 <body>
     
+    <main>
+        <section class="container">
+            <!--REPRODUCTOR DE MÚSICA-->
+            <div class="player">
+                <!--Controles / Botónes superiores-->
+                <div class="player__controls">
+                    <div class="player__btn player__btn--small">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+                    <h1 class="player__title">Now Playing</h1>
+                    <div class="player__btn player__btn--small">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+                <!--IMÁGENES DEL REPRODUCTOR-->
+                <div class="player__imgArea">
+                    <figure>
+                        <img src="#" alt="img-area">
+                    </figure>
+                </div>
+                <div class="song__details">
+                    <p class="name">Beauz & Jvna - Madness</p>
+                    <p class="artist">Beauz & June</p>
+                </div>
+                
+                <!--REPRODUCTOR DE MÚSICA-->
+                 <div class="progress__area">
+                     <!--AUDIO / REPRODUCTOR DE MÚSICA-->
+                     <div class="progress__bar">
+                         <span></span>
+                     </div>
+                     <div class="audio__timer">
+                         <span class="currentStart">00:20</span>
+                         <span class="currentEnd">3:40</span>
+                     </div>
+                 </div>
+                <!--BOTÓNES DEL REPRODUCTOR DE MÚSICA-->
+                 <div class="player__controls">
+                     <div class="player__btn player_btn--medium">
+                        <i id="repeat-plist" class="fas fa-redo-alt"></i>
+                     </div>
+
+                      <div class="player__btn player_btn--medium">
+                          <i id="prev" class="fas fa-backward"></i>
+                      </div>
+
+                      <div class="player_btn player_btn--medium blues" id="play">
+                        <i id="play" class="fas fa-play play-btn"></i>
+                        <i id="pause" class="fas fa-pause pause-btn hide"></i>
+                     </div>
+
+                     <div class="player_btn player_btn--medium">
+                        <i id="next" class="fas fa-forward"></i>
+                     </div>
+
+                     <div class="player__btn player__btn--medium">
+                        <i id="more-music" class="fas fa-plus"></i>
+                     </div>
+
+                 </div>
+                
+            </div>
+        </section>
+    </main>
 
     <script src="../customMusic/appCustomJs.js" type="text/javascript"></script>
 </body>

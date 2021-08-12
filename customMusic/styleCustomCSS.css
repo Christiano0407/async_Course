@@ -1,0 +1,61 @@
+:root {
+    --clr-black: #000000; 
+    --clr-bl02: #161616; 
+    --clr-white: #ffffff; 
+
+    --clr-gray: #797d7f; 
+    --clr-whiteTwo: #e0e5ec; 
+    /*Neomorphism*/
+    --light-shadow: #ffffff; 
+    --main-Background: #E0E5EC; 
+    --dark-shadow: #A3B1C6; 
+}
+*,::before,::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+   }
+   html {
+    font-size: 62.5%;
+   }
+   body {
+     width: 100%;
+     font-family: 'Poppins', sans-serif;
+     
+   }
+   ul {
+    list-style: none;
+   }
+   a {
+     text-decoration: none;
+     cursor: pointer;
+   }
+   img {
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+   
+     object-fit: cover;
+   }
+
+   main {
+    width: 100%;
+    margin: 2rem auto;
+}
+.container {
+    width: 100%;
+    margin: 2rem auto;
+    height: 500px;
+}
+.player {
+    width: 50%;
+    margin: 0 auto;
+    height: 100%;
+    
+    background: rgba( 255, 255, 255, 0.25 );
+     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+     backdrop-filter: blur( 4px );
+     -webkit-backdrop-filter: blur( 4px );
+     border-radius: 10px;
+     border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
