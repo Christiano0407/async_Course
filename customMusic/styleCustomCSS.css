@@ -238,4 +238,30 @@
 }
 .header .row i {
     cursor: default;
+    color: #000000;
+}
+.header #close {
+    font-size: 1.4rem;
+}
+.music-list ul {
+    width: 100%;
+    margin: 1rem auto;
+}
+.music-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.music-list ul li {
+    border: 2px solid red;
+    cursor: pointer;
+    list-style: none;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: .5rem;
+    color: #161616;
+}
+.music-list ul li:last-child {
+    border-bottom: 0px;
 }
