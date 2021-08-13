@@ -16,7 +16,26 @@ Course practice Javascript Vanilla Async and Await
 - [Resources_GitHub](https://github.com/zero-to-mastery/resources)
 - [awwwards](https://www.awwwards.com/)
 - [Resources Web/Design](https://github.com/zero-to-mastery/resources)
+- [30SecondsOfCode](https://www.30secondsofcode.org/)
 
+## API
+- [API](https://rapidapi.com/hub)
+- [API_explore](https://github.com/topics/api)
+- [API_W3](https://www.w3schools.com/js/js_api_intro.asp)
+- [The_Simpson_API](https://thesimpsonsquoteapi.glitch.me/)
+- [API_RedHat](https://www.redhat.com/es/topics/api)
+- [fetch_API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+- [API_XML](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
+- [GitHub_deploy](https://docs.github.com/en/rest/reference/repos#deployments)
+- [API_Rick](https://rickandmortyapi.com/documentation/)
+- [REST API](https://www.youtube.com/watch?v=bC5KVrX-AlA)
+- [Fast API](https://www.youtube.com/watch?v=tLKKmouUams&t=977s)
+- [API_freecodecamp](https://www.youtube.com/watch?v=GZvSYJDk-us&t=8s)
+
+## Deploy Web 
+- [Netlify](https://www.netlify.com/)
+- [Vercel](https://vercel.com/)
+- [Github Page](https://pages.github.com/)
 # CDN
 - [CDN](https://cdnjs.com/)
 
@@ -47,14 +66,6 @@ Course practice Javascript Vanilla Async and Await
 - [Netlify](https://www.netlify.com/)
 - [Vercel](https://vercel.com/)
 - [Heroku](https://www.heroku.com/)
-# MIT License
-- [Choosealicense](https://choosealicense.com/)
-- [MIT-License](https://choosealicense.com/licenses/mit/)
-- [License Categories](https://www.youtube.com/watch?v=eWtjgfzpt6Y)
-- [License Wikipedia](https://es.wikipedia.org/wiki/Licencia_de_software)
-- [Copyright](https://es.wikipedia.org/wiki/Derecho_de_autor)
-- [Academic Honesty Policy](https://www.freecodecamp.org/news/academic-honesty-policy/)
-
 ## Exercise App Music / Practice
 > References: 
 - [Resources](https://github.com/zero-to-mastery/resources)
@@ -98,6 +109,18 @@ Course practice Javascript Vanilla Async and Await
 > Color 
 - [Glassmorphism](https://glassmorphism.com/)
 - [Neumorphism](https://neumorphism.io/#e0e0e0)
+
+## Web Developer Community
+- [Web Community](https://github.com/WebDevsCom)
+
+# MIT License
+- [Choosealicense](https://choosealicense.com/)
+- [MIT-License](https://choosealicense.com/licenses/mit/)
+- [License Categories](https://www.youtube.com/watch?v=eWtjgfzpt6Y)
+- [License Wikipedia](https://es.wikipedia.org/wiki/Licencia_de_software)
+- [Copyright](https://es.wikipedia.org/wiki/Derecho_de_autor)
+- [Academic Honesty Policy ](https://www.freecodecamp.org/news/academic-honesty-policy/)
+
 
 MIT License
 
