@@ -1,5 +1,7 @@
 console.group("PLy Three Music"); 
 //  ============================= VARIABLES ========================================= >
+
+// >>>>>>>>>>> ==== Bases de Datos ==== <<<<<<<<<<<<<
 let allMusic = [
     {
       name: "Harley Bird - Home", 
